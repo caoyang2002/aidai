@@ -4,12 +4,12 @@ import { CommunitySidebar } from "@/components/community/community-sidebar"
 
 export default function CommunityPage() {
   return (
-    <div className="container py-8">
-      <CommunityHeader />
-      <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_300px]">
-        <CommunityFeed />
-        <CommunitySidebar />
-      </div>
+    <div className="container mx-auto max-w-6xl px-4 py-8">
+    <CommunityHeader />
+    <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_300px]">
+      <CommunityFeed />
+      <CommunitySidebar />
     </div>
+  </div>
   )
 }

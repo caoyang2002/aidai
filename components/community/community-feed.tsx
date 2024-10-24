@@ -3,27 +3,28 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ThumbsUp, MessageSquare, Share2 } from "lucide-react"
+import Image from "next/image"
 
 const posts = [
   {
     id: 1,
-    author: "Sarah Chen",
+    author: "陈莎拉",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100",
-    title: "How I Built My First Neural Network",
-    content: "Today I want to share my experience building my first neural network using PyTorch...",
+    title: "我如何构建了我的第一个神经网络",
+    content: "今天我想分享我使用PyTorch构建第一个神经网络的经验...",
     likes: 234,
     comments: 45,
-    timeAgo: "2 hours ago",
+    timeAgo: "2小时前",
   },
   {
     id: 2,
-    author: "David Kumar",
+    author: "大卫·库马尔",
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100",
-    title: "Understanding Transformer Architecture",
-    content: "Let's dive deep into the transformer architecture that revolutionized NLP...",
+    title: "理解Transformer架构",
+    content: "让我们深入探讨改变了自然语言处理的Transformer架构...",
     likes: 189,
     comments: 32,
-    timeAgo: "4 hours ago",
+    timeAgo: "4小时前",
   },
 ]
 
@@ -33,9 +34,11 @@ export function CommunityFeed() {
       {posts.map((post) => (
         <Card key={post.id} className="p-6">
           <div className="flex gap-4">
-            <img
+            <Image
               src={post.avatar}
               alt={post.author}
+              width={40}
+              height={40}
               className="h-10 w-10 rounded-full object-cover"
             />
             <div className="flex-1 space-y-2">

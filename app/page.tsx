@@ -5,24 +5,24 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col justify-center items-center">
       {/* Hero Section */}
-      <section className="relative hero-gradient">
+      <section className="relative ">
         <div className="container flex flex-col items-center justify-center space-y-4 py-24 text-center md:py-32">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-              Master AI with Aid AI
+            即刻开启 AI 探索之旅
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              Your comprehensive platform for learning artificial intelligence. From basics to advanced concepts, we've got you covered.
+             从初学者到高级应用的 AI 学习旅程，AI Trail 带你领略 AI 的无限可能。
             </p>
           </div>
           <div className="flex flex-col gap-4 min-[400px]:flex-row">
-            <Button size="lg" className="glass-effect hover:bg-white/20" asChild>
-              <Link href="/courses">Start Learning</Link>
+            <Button variant="outline" size="lg" className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500  hover:bg-white/20" asChild>
+              <Link href="/courses" >开始学习</Link>
             </Button>
-            <Button variant="outline" size="lg" className="glass-effect hover:bg-white/20" asChild>
-              <Link href="/docs">View Documentation</Link>
+            <Button variant="ghost" size="lg" className="glass-effect hover:bg-white/20" asChild>
+              <Link href="/docs" >查看文档</Link>
             </Button>
           </div>
         </div>
@@ -31,27 +31,27 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-16 md:py-24">
         <div className="container">
-          <h2 className="mb-12 text-center text-3xl font-bold tracking-tight">Why Choose Aid AI?</h2>
+          <h2 className="mb-12 text-center text-3xl font-bold tracking-tight">为什么选择 AI Trail?</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card className="glass-card flex flex-col p-6">
               <BookOpen className="mb-4 h-10 w-10 text-primary" />
-              <h3 className="mb-2 text-xl font-bold">Comprehensive Courses</h3>
+              <h3 className="mb-2 text-xl font-bold">高级课程</h3>
               <p className="text-muted-foreground">
-                Structured learning paths covering all aspects of AI, from machine learning to neural networks.
+              结构化的学习路径涵盖了人工智能的各个方面，从机器学习到神经网络。
               </p>
             </Card>
             <Card className="glass-card flex flex-col p-6">
               <Users className="mb-4 h-10 w-10 text-primary" />
-              <h3 className="mb-2 text-xl font-bold">Active Community</h3>
+              <h3 className="mb-2 text-xl font-bold">活跃的社区</h3>
               <p className="text-muted-foreground">
-                Connect with fellow learners, share experiences, and grow together in our vibrant community.
+              与其他学习者交流、分享经验，并在我们充满活力的社区中共同成长。
               </p>
             </Card>
             <Card className="glass-card flex flex-col p-6">
               <Code className="mb-4 h-10 w-10 text-primary" />
-              <h3 className="mb-2 text-xl font-bold">Hands-on Projects</h3>
+              <h3 className="mb-2 text-xl font-bold">实践项目</h3>
               <p className="text-muted-foreground">
-                Apply your knowledge with real-world projects and practical exercises.
+              将你的知识应用到现实世界的项目和实践练习中。
               </p>
             </Card>
           </div>

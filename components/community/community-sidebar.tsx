@@ -1,19 +1,20 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Fire, Trophy, Users } from "lucide-react"
+import { Flame, Trophy, Users } from "lucide-react"
+import Image from "next/image"
 
 const trending = [
   {
-    title: "Getting Started with GPT-4",
-    views: "2.1k views",
+    title: "开始使用 GPT-4",
+    views: "2.1k次观看",
   },
   {
-    title: "Best Practices in ML",
-    views: "1.8k views",
+    title: "机器学习的最佳实践",
+    views: "1.8k次观看",
   },
   {
-    title: "AI Ethics Discussion",
-    views: "1.5k views",
+    title: "人工智能原理讨论",
+    views: "1.5k次观看",
   },
 ]
 
@@ -40,8 +41,8 @@ export function CommunitySidebar() {
     <div className="space-y-6">
       <Card className="p-6">
         <div className="flex items-center gap-2">
-          <Fire className="h-5 w-5 text-orange-500" />
-          <h3 className="font-semibold">Trending Topics</h3>
+          <Flame className="h-5 w-5 text-orange-500" />
+          <h3 className="font-semibold">热门话题</h3>
         </div>
         <div className="mt-4 space-y-4">
           {trending.map((topic, index) => (
@@ -56,20 +57,22 @@ export function CommunitySidebar() {
       <Card className="p-6">
         <div className="flex items-center gap-2">
           <Trophy className="h-5 w-5 text-yellow-500" />
-          <h3 className="font-semibold">Top Contributors</h3>
+          <h3 className="font-semibold">Top 贡献者</h3>
         </div>
         <div className="mt-4 space-y-4">
           {topContributors.map((contributor, index) => (
             <div key={index} className="flex items-center gap-3">
-              <img
+              <Image
                 src={contributor.avatar}
                 alt={contributor.name}
+                width={40}
+                height={40}
                 className="h-8 w-8 rounded-full object-cover"
               />
               <div>
                 <p className="font-medium">{contributor.name}</p>
                 <p className="text-sm text-muted-foreground">
-                  {contributor.contributions} contributions
+                  {contributor.contributions} 贡献
                 </p>
               </div>
             </div>
@@ -77,7 +80,7 @@ export function CommunitySidebar() {
         </div>
         <Button className="mt-4 w-full" variant="outline">
           <Users className="mr-2 h-4 w-4" />
-          View All Members
+        查看所有成员 
         </Button>
       </Card>
     </div>

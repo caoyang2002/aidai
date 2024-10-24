@@ -12,13 +12,13 @@ export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full">
-      <div className="glass-effect">
+    <header className="sticky top-0 z-50 w-full ">
+      <div className="glass-effect flex justify-center">
         <div className="container flex h-16 items-center">
-          <div className="mr-4 flex items-center space-x-2">
+          <a href="/" className="mr-4 flex items-center space-x-2">
             <Brain className="h-6 w-6" />
-            <span className="hidden font-bold sm:inline-block">Aid AI</span>
-          </div>
+            <span className="hidden font-bold sm:inline-block">AI Trail</span>
+          </a>
 
           <div className="flex-1">
             <NavigationMenu className="hidden md:flex">
@@ -26,21 +26,21 @@ export function Navigation() {
                 <NavigationMenuItem>
                   <Link href="/courses" legacyBehavior passHref>
                     <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-accent-foreground focus:bg-white/10 focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                      Courses
+                      教程
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/docs" legacyBehavior passHref>
                     <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-accent-foreground focus:bg-white/10 focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                      Documentation
+                      文档
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/community" legacyBehavior passHref>
                     <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-accent-foreground focus:bg-white/10 focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                      Community
+                      社区
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -57,7 +57,7 @@ export function Navigation() {
             >
               <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-              <span className="sr-only">Toggle theme</span>
+              <span className="sr-only">切换主题</span>
             </Button>
             <Button
               variant="ghost"
@@ -78,13 +78,13 @@ export function Navigation() {
           <div className="container md:hidden">
             <nav className="flex flex-col space-y-4 pb-4">
               <Link href="/courses" className="text-sm font-medium hover:text-accent-foreground">
-                Courses
+                教程
               </Link>
               <Link href="/docs" className="text-sm font-medium hover:text-accent-foreground">
-                Documentation
+              文档
               </Link>
               <Link href="/community" className="text-sm font-medium hover:text-accent-foreground">
-                Community
+               社区
               </Link>
             </nav>
           </div>
