@@ -1,3 +1,4 @@
+import DotGridBackground from "@/components/dot-grid-background"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Brain, BookOpen, Users, Code, Newspaper } from "lucide-react"
@@ -6,6 +7,7 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center">
+      <DotGridBackground/>
       {/* Hero Section */}
       <section className="relative ">
         <div className="container flex flex-col items-center justify-center space-y-4 py-24 text-center md:py-32">
@@ -62,26 +64,26 @@ export default function Home() {
       <section>
         <div className="container py-16 md:py-24">
           <div className="mb-12 flex items-center justify-between">
-            <h2 className="text-3xl font-bold tracking-tight">Latest Updates</h2>
+            <h2 className="text-3xl font-bold tracking-tight">最新</h2>
             <Button variant="outline" className="glass-effect hover:bg-white/20" asChild>
-              <Link href="/blog">View All</Link>
+              <Link href="/blog">查看所有</Link>
             </Button>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[1, 2, 3].map((i) => (
               <Card key={i} className="glass-card flex flex-col">
-                <div className="aspect-video w-full bg-white/5 backdrop-blur" />
+                <div className="aspect-video w-full bg-blue-500/5 backdrop-blur" />
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Newspaper className="h-4 w-4" />
-                    <time dateTime="2024-03-20">March 20, 2024</time>
+                    <time dateTime="2024-03-20">10 20, 2024</time>
                   </div>
-                  <h3 className="mt-4 text-xl font-bold">Understanding Large Language Models</h3>
-                  <p className="mt-2 line-clamp-2 flex-1 text-muted-foreground">
-                    Dive deep into the architecture and capabilities of large language models like GPT-4.
-                  </p>
+                  <h3 className="mt-4 text-xl font-bold">理解大型语言模型</h3>
+<p className="mt-2 line-clamp-2 flex-1 text-muted-foreground">
+  深入探索像GPT-4这样的大型语言模型的架构和能力。
+</p>
                   <Button variant="link" className="mt-4 px-0 hover:bg-white/10" asChild>
-                    <Link href="/blog/understanding-llms">Read More</Link>
+                    <Link href="/blog/understanding-llms">了解更多</Link>
                   </Button>
                 </div>
               </Card>

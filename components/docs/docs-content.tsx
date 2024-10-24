@@ -1,31 +1,26 @@
 export function DocsContent() {
   return (
     <div className="prose prose-neutral dark:prose-invert max-w-none">
-      <h1>Welcome to Aid AI Documentation</h1>
+      <h1>欢迎来到Aid AI文档</h1>
       <p>
-        This documentation will help you understand the core concepts of artificial
-        intelligence and guide you through your learning journey.
+        本文档将帮助您理解人工智能的核心概念，并指导您完成学习之旅。
       </p>
       
-      <h2>Getting Started</h2>
+      <h2>快速开始</h2>
       <p>
-        Before diving into specific AI topics, it's important to understand the
-        basic concepts and terminology used in the field. This section will provide
-        you with the foundation you need to progress through more advanced topics.
+        在深入特定的AI主题之前，了解该领域使用的基本概念和术语非常重要。这一部分将为您提供掌握更高级主题所需的基础。
       </p>
 
-      <h3>Prerequisites</h3>
+      <h3>先决条件</h3>
       <ul>
-        <li>Basic understanding of mathematics and statistics</li>
-        <li>Programming experience (Python recommended)</li>
-        <li>Familiarity with data structures and algorithms</li>
+        <li>基本的数学和统计学知识</li>
+        <li>编程经验（推荐Python）</li>
+        <li>熟悉数据结构和算法</li>
       </ul>
 
-      <h2>Next Steps</h2>
+      <h2>下一步</h2>
       <p>
-        Choose a learning path that matches your interests and current skill level.
-        We recommend starting with the Machine Learning Basics course if you're new
-        to AI.
+        选择与您的兴趣和当前技能水平相匹配的学习路径。如果您是AI新手，我们建议您从“机器学习基础”课程开始。
       </p>
     </div>
   )

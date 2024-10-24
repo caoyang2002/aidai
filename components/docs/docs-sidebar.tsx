@@ -5,26 +5,26 @@ import { Button } from "@/components/ui/button"
 
 const sections = [
   {
-    title: "Getting Started",
+    title: "快速开始",
     items: [
-      { title: "Introduction", href: "/docs/introduction" },
-      { title: "Installation", href: "/docs/installation" },
-      { title: "Quick Start", href: "/docs/quick-start" },
+      { title: "介绍", href: "/docs/introduction" },
+      { title: "安装", href: "/docs/installation" },
+      { title: "快速入门", href: "/docs/quick-start" },
     ],
   },
   {
-    title: "Core Concepts",
+    title: "核心概念",
     items: [
-      { title: "Machine Learning", href: "/docs/machine-learning" },
-      { title: "Neural Networks", href: "/docs/neural-networks" },
-      { title: "Deep Learning", href: "/docs/deep-learning" },
+      { title: "机器学习", href: "/docs/machine-learning" },
+      { title: "神经网络", href: "/docs/neural-networks" },
+      { title: "深度学习", href: "/docs/deep-learning" },
     ],
   },
 ]
 
 export function DocsSidebar() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 mx-auto max-w-6xl px-8 ">
       {sections.map((section) => (
         <div key={section.title}>
           <h4 className="mb-2 text-sm font-semibold">{section.title}</h4>
