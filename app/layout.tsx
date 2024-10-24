@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Aid AI - Your Gateway to Artificial Intelligence',
-  description: 'Comprehensive AI education platform for beginners, covering text, voice, image, and more.',
+  title: 'AI Trail - 人工智能学习与应用平台 | AI教程、工具与实战',
+  description: 'Aid AI提供全方位的人工智能学习资源，包括文本生成、语音合成、图像处理等AI技术教程。从入门到进阶的AI实践指南，助您快速掌握人工智能技术，开启AI应用之旅。',
 };
 
 export default function RootLayout({
